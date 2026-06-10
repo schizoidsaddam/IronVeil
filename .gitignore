@@ -1,0 +1,6 @@
+/target/
+ironveil.db
+ironveil.chronicle
+chronicle.html
+**/*.rs.bk
+.env

@@ -1,0 +1,37 @@
+[package]
+name = "ironveil"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name = "ironveil"
+path = "src/main.rs"
+
+[dependencies]
+ratatui   = "=0.26.3"
+crossterm = "=0.27.0"
+sysinfo   = "=0.30.13"
+rusqlite  = { version = "=0.31.0", features = ["bundled"] }
+rand = { version = "=0.8.5", features = ["small_rng"] }
+chrono    = "=0.4.38"
+anyhow    = "=1.0.86"
+tokio     = { version = "=1.38.0", features = ["full"] }
+sha2      = "=0.10.8"
+hex       = "=0.4.3"
+serde     = { version = "=1.0.203", features = ["derive"] }
+serde_json = "=1.0.120"
+
+[dependencies.indexmap]
+version = "=2.2.6"
+
+[profile.release]
+opt-level = 3
+
+[dependencies.rayon]
+version = "=1.9.0"
+
+[dependencies.rayon-core]
+version = "=1.12.1"
+
+[dependencies.unicode-segmentation]
+version = "=1.11.0"
