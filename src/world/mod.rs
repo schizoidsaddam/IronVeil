@@ -1,4 +1,6 @@
+pub mod dialogue;
 pub mod gen;
+pub mod local;
 pub(crate) mod lore;
 mod names;
 mod simulation;
